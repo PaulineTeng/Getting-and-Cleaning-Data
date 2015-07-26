@@ -1,5 +1,5 @@
-#Title: Code Book for run_analysis
-#Author: Pauline Teng
+##Title: Code Book for run_analysis
+##Author: Pauline Teng
 
 Column Name                         | Data Type | Minimum Value        | Maximum Value
 ----------------------------------- | --------- | -------------------- | --------------------
