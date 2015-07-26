@@ -1,93 +1,93 @@
 #Title: Code Book for run_analysis
 #Author: Pauline Teng
 
-##Column Name                         Data Type Minimum Value        Maximum Value
-##----------------------------------- --------- -------------------- --------------------
-subject                             integer   1                    30                 
-activity                            character LAYING               WALKING_UPSTAIRS   
-tBodyAcc.Mean.X                     numeric   0.242298449272727    0.279177960301325  
-tBodyAcc.Mean.Y                     numeric   -0.0316561370181818  -0.0144537072594949
-tBodyAcc.Mean.Z                     numeric   -0.118277180099383   -0.100985935692074 
-tBodyAcc.Std.X                      numeric   -0.99504124          0.0764832471304546 
-tBodyAcc.Std.Y                      numeric   -0.979413535862069   0.219952845181818  
-tBodyAcc.Std.Z                      numeric   -0.980976484137931   -0.0935184360181818
-tGravityAcc.Mean.X                  numeric   0.441236068541667    0.908399606896552  
-tGravityAcc.Mean.Y                  numeric   -0.350769156818182   0.2005691803125    
-tGravityAcc.Mean.Z                  numeric   -0.278195591724138   0.266233413475819  
-tGravityAcc.Std.X                   numeric   -0.993349445862069   -0.939673766818182 
-tGravityAcc.Std.Y                   numeric   -0.984760977241379   -0.901088770963325 
-tGravityAcc.Std.Z                   numeric   -0.98129168137931    -0.880682330706601 
-tBodyAccJerk.Mean.X                 numeric   0.0686095366464646   0.105897183954545  
-tBodyAccJerk.Mean.Y                 numeric   -0.00137201536971429 0.0320774996545455 
-tBodyAccJerk.Mean.Z                 numeric   -0.0326983629140909  0.00364494866063107
-tBodyAccJerk.Std.X                  numeric   -0.994019934482759   0.0296014137090909 
-tBodyAccJerk.Std.Y                  numeric   -0.989158120689655   -0.0270976569090909
-tBodyAccJerk.Std.Z                  numeric   -0.992004427241379   -0.444640860909091 
-tBodyGyro.Mean.X                    numeric   -0.0735291511680114  0.119614300727273  
-tBodyGyro.Mean.Y                    numeric   -0.172162155445455   -0.0451436890589205
-tBodyGyro.Mean.Z                    numeric   -0.0046475084        0.109092913237986  
-tBodyGyro.Std.X                     numeric   -0.986979955517241   -0.377598602272727 
-tBodyGyro.Std.Y                     numeric   -0.985073170689655   -0.398959362766099 
-tBodyGyro.Std.Z                     numeric   -0.987937566551724   -0.1330599105      
-tBodyGyroJerk.Mean.X                numeric   -0.119050870677727   -0.0731134377315625
-tBodyGyroJerk.Mean.Y                numeric   -0.0593756069681818  -0.036876527389899 
-tBodyGyroJerk.Mean.Z                numeric   -0.0743422650272727  -0.0450693836894427
-tBodyGyroJerk.Std.X                 numeric   -0.991854138275862   -0.388955637727273 
-tBodyGyroJerk.Std.Y                 numeric   -0.993318104482759   -0.546043593651882 
-tBodyGyroJerk.Std.Z                 numeric   -0.993400307586207   -0.482172029090909 
-tBodyAccMag.Mean                    numeric   -0.985418968275862   0.194598717272727  
-tBodyAccMag.Std                     numeric   -0.986826527241379   -0.126888896863636 
-tGravityAccMag.Mean                 numeric   -0.985418968275862   0.194598717272727  
-tGravityAccMag.Std                  numeric   -0.986826527241379   -0.126888896863636 
-tBodyAccJerkMag.Mean                numeric   -0.993245806206897   -0.0662072290227273
-tBodyAccJerkMag.Std                 numeric   -0.993375015172414   -0.0363532663636364
-tBodyGyroMag.Mean                   numeric   -0.983299607586207   -0.137333612554545 
-tBodyGyroMag.Std                    numeric   -0.981656969655172   -0.223751816518182 
-tBodyGyroJerkMag.Mean               numeric   -0.994309820689655   -0.543885972272727 
-tBodyGyroJerkMag.Std                numeric   -0.993276945862069   -0.573942888021613 
-fBodyAcc.Mean.X                     numeric   -0.994496322758621   -0.0414589456      
-fBodyAcc.Mean.Y                     numeric   -0.982367664137931   0.1231057773       
-fBodyAcc.Mean.Z                     numeric   -0.986495766206897   -0.198565773954545 
-fBodyAcc.Std.X                      numeric   -0.995250992758621   0.118339545340909  
-fBodyAcc.Std.Y                      numeric   -0.97835155862069    0.190673821868182  
-fBodyAcc.Std.Z                      numeric   -0.978759603793103   -0.1092913705      
-fBodyAcc.MeanFreq.X                 numeric   -0.319171141631269   -0.0209428055310345
-fBodyAcc.MeanFreq.Y                 numeric   -0.15308350824613    0.128076957523023  
-fBodyAcc.MeanFreq.Z                 numeric   -0.107844299474303   0.286965877634375  
-fBodyAccJerk.Mean.X                 numeric   -0.994117062068965   0.00774466264545455
-fBodyAccJerk.Mean.Y                 numeric   -0.988820999655172   -0.042898966       
-fBodyAccJerk.Mean.Z                 numeric   -0.990597965172414   -0.38815349        
-fBodyAccJerk.Std.X                  numeric   -0.994459398275862   -0.0416593402068182
-fBodyAccJerk.Std.Y                  numeric   -0.990414811034483   -0.0801154312545455
-fBodyAccJerk.Std.Z                  numeric   -0.991935782413793   -0.500476129545455 
-fBodyAccJerk.MeanFreq.X             numeric   -0.219176266215278   0.263820488655172  
-fBodyAccJerk.MeanFreq.Y             numeric   -0.347751351072054   0.108166523701034  
-fBodyAccJerk.MeanFreq.Z             numeric   -0.290292303180208   0.129477226520833  
-fBodyGyro.Mean.X                    numeric   -0.985993540344828   -0.237124032272727 
-fBodyGyro.Mean.Y                    numeric   -0.987392253103448   -0.477139862384066 
-fBodyGyro.Mean.Z                    numeric   -0.988668107931035   -0.158548504727273 
-fBodyGyro.Std.X                     numeric   -0.987354722068966   -0.423153909545455 
-fBodyGyro.Std.Y                     numeric   -0.98380969137931    -0.348864187370186 
-fBodyGyro.Std.Z                     numeric   -0.988732922758621   -0.205526546681818 
-fBodyGyro.MeanFreq.X                numeric   -0.241341060754489   0.0289087194733538 
-fBodyGyro.MeanFreq.Y                numeric   -0.375332544565931   0.0737505451791667 
-fBodyGyro.MeanFreq.Z                numeric   -0.212818474897214   0.101044783556     
-fBodyAccMag.Mean                    numeric   -0.990007266206896   -0.0295832732681818
-fBodyAccMag.Std                     numeric   -0.98628791137931    -0.323464307272727 
-fBodyAccMag.MeanFreq                numeric   -0.0600681274123529  0.320082676954545  
-fBodyBodyAccJerkMag.Mean            numeric   -0.993005947241379   0.00382710664090909
-fBodyBodyAccJerkMag.Std             numeric   -0.992630932068965   -0.0977799986818182
-fBodyBodyAccJerkMag.MeanFreq        numeric   0.0817046208143603   0.428727917586207  
-fBodyBodyGyroMag.Mean               numeric   -0.986607555172414   -0.354449740454545 
-fBodyBodyGyroMag.Std                numeric   -0.981446073103448   -0.2723853645      
-fBodyBodyGyroMag.MeanFreq           numeric   -0.220820330447482   0.154723197790323  
-fBodyBodyGyroJerkMag.Mean           numeric   -0.99327833          -0.584111049810215 
-fBodyBodyGyroJerkMag.Std            numeric   -0.993482856896552   -0.593735302105376 
-fBodyBodyGyroJerkMag.MeanFreq       numeric   -0.0133907447233981  0.370064592413793  
-angle.tBodyAccMean.gravity          numeric   -0.0156791396750104  0.0760052372590909 
-angle.tBodyAccJerkMean.gravityMean  numeric   -0.0954311007272727  0.0470369997647922 
-angle.tBodyGyroMean.gravityMean     numeric   -0.276102217727273   0.118881574046188  
-angle.tBodyGyroJerkMean.gravityMean numeric   -0.06449492227475    0.0851886389585859 
-angle.X.gravityMean                 numeric   -0.670442528275862   -0.277273605729167 
-angle.Y.gravityMean                 numeric   -0.0959038883229167  0.328083675454545  
-angle.Z.gravityMean                 numeric   -0.186281046709699   0.217081473103448 
+Column Name                         | Data Type | Minimum Value        | Maximum Value
+----------------------------------- | --------- | -------------------- | --------------------
+subject                             | integer   | 1                    | 30                 
+activity                            | character | LAYING               | WALKING_UPSTAIRS   
+tBodyAcc.Mean.X                     | numeric   | 0.242298449272727    | 0.279177960301325  
+tBodyAcc.Mean.Y                     | numeric   | -0.0316561370181818  | -0.0144537072594949
+tBodyAcc.Mean.Z                     | numeric   | -0.118277180099383   | -0.100985935692074 
+tBodyAcc.Std.X                      | numeric   | -0.99504124          | 0.0764832471304546 
+tBodyAcc.Std.Y                      | numeric   | -0.979413535862069   | 0.219952845181818  
+tBodyAcc.Std.Z                      | numeric   | -0.980976484137931   | -0.0935184360181818
+tGravityAcc.Mean.X                  | numeric   | 0.441236068541667    | 0.908399606896552  
+tGravityAcc.Mean.Y                  | numeric   | -0.350769156818182   | 0.2005691803125    
+tGravityAcc.Mean.Z                  | numeric   | -0.278195591724138   | 0.266233413475819  
+tGravityAcc.Std.X                   | numeric   | -0.993349445862069   | -0.939673766818182 
+tGravityAcc.Std.Y                   | numeric   | -0.984760977241379   | -0.901088770963325 
+tGravityAcc.Std.Z                   | numeric   | -0.98129168137931    | -0.880682330706601 
+tBodyAccJerk.Mean.X                 | numeric   | 0.0686095366464646   | 0.105897183954545  
+tBodyAccJerk.Mean.Y                 | numeric   | -0.00137201536971429 | 0.0320774996545455 
+tBodyAccJerk.Mean.Z                 | numeric   | -0.0326983629140909  | 0.00364494866063107
+tBodyAccJerk.Std.X                  | numeric   | -0.994019934482759   | 0.0296014137090909 
+tBodyAccJerk.Std.Y                  | numeric   | -0.989158120689655   | -0.0270976569090909
+tBodyAccJerk.Std.Z                  | numeric   | -0.992004427241379   | -0.444640860909091 
+tBodyGyro.Mean.X                    | numeric   | -0.0735291511680114  | 0.119614300727273  
+tBodyGyro.Mean.Y                    | numeric   | -0.172162155445455   | -0.0451436890589205
+tBodyGyro.Mean.Z                    | numeric   | -0.0046475084        | 0.109092913237986  
+tBodyGyro.Std.X                     | numeric   | -0.986979955517241   | -0.377598602272727 
+tBodyGyro.Std.Y                     | numeric   | -0.985073170689655   | -0.398959362766099 
+tBodyGyro.Std.Z                     | numeric   | -0.987937566551724   | -0.1330599105      
+tBodyGyroJerk.Mean.X                | numeric   | -0.119050870677727   | -0.0731134377315625
+tBodyGyroJerk.Mean.Y                | numeric   | -0.0593756069681818  | -0.036876527389899 
+tBodyGyroJerk.Mean.Z                | numeric   | -0.0743422650272727  | -0.0450693836894427
+tBodyGyroJerk.Std.X                 | numeric   | -0.991854138275862   | -0.388955637727273 
+tBodyGyroJerk.Std.Y                 | numeric   | -0.993318104482759   | -0.546043593651882 
+tBodyGyroJerk.Std.Z                 | numeric   | -0.993400307586207   | -0.482172029090909 
+tBodyAccMag.Mean                    | numeric   | -0.985418968275862   | 0.194598717272727  
+tBodyAccMag.Std                     | numeric   | -0.986826527241379   | -0.126888896863636 
+tGravityAccMag.Mean                 | numeric   | -0.985418968275862   | 0.194598717272727  
+tGravityAccMag.Std                  | numeric   | -0.986826527241379   | -0.126888896863636 
+tBodyAccJerkMag.Mean                | numeric   | -0.993245806206897   | -0.0662072290227273
+tBodyAccJerkMag.Std                 | numeric   | -0.993375015172414   | -0.0363532663636364
+tBodyGyroMag.Mean                   | numeric   | -0.983299607586207   | -0.137333612554545 
+tBodyGyroMag.Std                    | numeric   | -0.981656969655172   | -0.223751816518182 
+tBodyGyroJerkMag.Mean               | numeric   | -0.994309820689655   | -0.543885972272727 
+tBodyGyroJerkMag.Std                | numeric   | -0.993276945862069   | -0.573942888021613 
+fBodyAcc.Mean.X                     | numeric   | -0.994496322758621   | -0.0414589456      
+fBodyAcc.Mean.Y                     | numeric   | -0.982367664137931   | 0.1231057773       
+fBodyAcc.Mean.Z                     | numeric   | -0.986495766206897   | -0.198565773954545 
+fBodyAcc.Std.X                      | numeric   | -0.995250992758621   | 0.118339545340909  
+fBodyAcc.Std.Y                      | numeric   | -0.97835155862069    | 0.190673821868182  
+fBodyAcc.Std.Z                      | numeric   | -0.978759603793103   | -0.1092913705      
+fBodyAcc.MeanFreq.X                 | numeric   | -0.319171141631269   | -0.0209428055310345
+fBodyAcc.MeanFreq.Y                 | numeric   | -0.15308350824613    | 0.128076957523023  
+fBodyAcc.MeanFreq.Z                 | numeric   | -0.107844299474303   | 0.286965877634375  
+fBodyAccJerk.Mean.X                 | numeric   | -0.994117062068965   | 0.00774466264545455
+fBodyAccJerk.Mean.Y                 | numeric   | -0.988820999655172   | -0.042898966       
+fBodyAccJerk.Mean.Z                 | numeric   | -0.990597965172414   | -0.38815349        
+fBodyAccJerk.Std.X                  | numeric   | -0.994459398275862   | -0.0416593402068182
+fBodyAccJerk.Std.Y                  | numeric   | -0.990414811034483   | -0.0801154312545455
+fBodyAccJerk.Std.Z                  | numeric   | -0.991935782413793   | -0.500476129545455 
+fBodyAccJerk.MeanFreq.X             | numeric   | -0.219176266215278   | 0.263820488655172  
+fBodyAccJerk.MeanFreq.Y             | numeric   | -0.347751351072054   | 0.108166523701034  
+fBodyAccJerk.MeanFreq.Z             | numeric   | -0.290292303180208   | 0.129477226520833  
+fBodyGyro.Mean.X                    | numeric   | -0.985993540344828   | -0.237124032272727 
+fBodyGyro.Mean.Y                    | numeric   | -0.987392253103448   | -0.477139862384066 
+fBodyGyro.Mean.Z                    | numeric   | -0.988668107931035   | -0.158548504727273 
+fBodyGyro.Std.X                     | numeric   | -0.987354722068966   | -0.423153909545455 
+fBodyGyro.Std.Y                     | numeric   | -0.98380969137931    | -0.348864187370186 
+fBodyGyro.Std.Z                     | numeric   | -0.988732922758621   | -0.205526546681818 
+fBodyGyro.MeanFreq.X                | numeric   | -0.241341060754489   | 0.0289087194733538 
+fBodyGyro.MeanFreq.Y                | numeric   | -0.375332544565931   | 0.0737505451791667 
+fBodyGyro.MeanFreq.Z                | numeric   | -0.212818474897214   | 0.101044783556     
+fBodyAccMag.Mean                    | numeric   | -0.990007266206896   | -0.0295832732681818
+fBodyAccMag.Std                     | numeric   | -0.98628791137931    | -0.323464307272727 
+fBodyAccMag.MeanFreq                | numeric   | -0.0600681274123529  | 0.320082676954545  
+fBodyBodyAccJerkMag.Mean            | numeric   | -0.993005947241379   | 0.00382710664090909
+fBodyBodyAccJerkMag.Std             | numeric   | -0.992630932068965   | -0.0977799986818182
+fBodyBodyAccJerkMag.MeanFreq        | numeric   | 0.0817046208143603   | 0.428727917586207  
+fBodyBodyGyroMag.Mean               | numeric   | -0.986607555172414   | -0.354449740454545 
+fBodyBodyGyroMag.Std                | numeric   | -0.981446073103448   | -0.2723853645      
+fBodyBodyGyroMag.MeanFreq           | numeric   | -0.220820330447482   | 0.154723197790323  
+fBodyBodyGyroJerkMag.Mean           | numeric   | -0.99327833          | -0.584111049810215 
+fBodyBodyGyroJerkMag.Std            | numeric   | -0.993482856896552   | -0.593735302105376 
+fBodyBodyGyroJerkMag.MeanFreq       | numeric   | -0.0133907447233981  | 0.370064592413793  
+angle.tBodyAccMean.gravity          | numeric   | -0.0156791396750104  | 0.0760052372590909 
+angle.tBodyAccJerkMean.gravityMean  | numeric   | -0.0954311007272727  | 0.0470369997647922 
+angle.tBodyGyroMean.gravityMean     | numeric   | -0.276102217727273   | 0.118881574046188  
+angle.tBodyGyroJerkMean.gravityMean | numeric   | -0.06449492227475    | 0.0851886389585859 
+angle.X.gravityMean                 | numeric   | -0.670442528275862   | -0.277273605729167 
+angle.Y.gravityMean                 | numeric   | -0.0959038883229167  | 0.328083675454545  
+angle.Z.gravityMean                 | numeric   | -0.186281046709699   | 0.217081473103448  
