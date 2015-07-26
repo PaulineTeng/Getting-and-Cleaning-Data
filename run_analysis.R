@@ -6,7 +6,6 @@ run_analysis <- function() {
   
   data1 <- rbind(read.table("UCI HAR Dataset/train/subject_train.txt"),read.table("UCI HAR Dataset/test/subject_test.txt"))
   names(data1) <- "subject"
-  ##class(data1$subject) <- "character"
   
   data2 <- rbind(read.table("UCI HAR Dataset/train/Y_train.txt",stringsAsFactors=FALSE),read.table("UCI HAR Dataset/test/Y_test.txt",stringsAsFactors=FALSE))
   activity <- read.table("UCI HAR Dataset/activity_labels.txt",stringsAsFactors=FALSE)
