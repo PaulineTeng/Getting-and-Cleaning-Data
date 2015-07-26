@@ -1,9 +1,18 @@
 # Run Analysis
+This script is to produce the average of the measurements on the mean and standard deviation for each activity and each subject.
+
 
 ## Input Data
 The raw dataset is available at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-For this analysis, the below files are extracted and analyzed.
+For each record it is provided:
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
+For this analysis, below files are extracted and analyzed.
 
 	\UCI HAR Dataset\test\X_test.txt
 
@@ -20,10 +29,10 @@ For this analysis, the below files are extracted and analyzed.
 	\UCI HAR Dataset\features.txt
 
 ####X_test.txt and X_train.txt
-These files are the training sets and contain observation of 561 features.
+These files are the training sets and contain observation of 561 features. Features are normalized and bounded within [-1,1].
 
 ####y_test.txt and y_train.txt
-These are the training labels and contain 1 variable.
+These are the training labels.
 
 ####subject_test.txt & subject_train.txt
 Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
@@ -46,7 +55,7 @@ Step 4: Read activity_labels.txt and match the labels with the training activiti
 
 Step 5: Read X_train.txt, X_test.txt into data3.
 
-Step 6: Read feature.txt and rename the features for easier reading.
+Step 6: Read feature.txt and rename features with descriptive names.
 
 Step 7: Assign feature as the column names of data3.
 
